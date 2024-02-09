@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Centers the container vertically */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start of the flex container */
+}
+
+.number-matrix {
+  margin-top: -120px;
+  margin-right: 100px; /* Add space between matrix and caller area */
+}
+
+.number-column {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.number-cell {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.number-cell.called {
+  background-color: yellow;
+}
+
+.caller-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+.call-button,
+.reset-button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-right: 10px; /* Add margin between buttons */
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  display: inline-block; /* Display buttons in one row */
+}
+
+.call-button:hover,
+.reset-button:hover {
+  background-color: #0056b3;
+}
+
+.number-display {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center; /* Center text horizontally */
+}
