@@ -27,7 +27,7 @@ function callNumber() {
 function reset() {
   calledNumbers = [];
   updateCalledNumbersDisplay();
-  updateNumberDisplay(0); // Change current number to 0
+  updateNumberDisplay('-'); // Change current number to 0
 }
 
 // Function to generate a random number
@@ -64,3 +64,6 @@ function updateCalledNumbersDisplay(number) {
     numberMatrixElement.appendChild(columnElement);
   });
 }
+
+// Draw the matrix when initializing the app
+updateCalledNumbersDisplay();
